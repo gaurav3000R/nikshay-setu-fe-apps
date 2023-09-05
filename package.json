@@ -1,0 +1,19 @@
+{
+  "name": "tb-v2-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Digiflut IT Solutions <info@digiflux.io>",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "*react*",
+      "*react*/**",
+      "*react-native*",
+      "*react-native*/**"
+    ]
+  },
+  "license": "MIT",
+  "main": "index.js"
+}
