@@ -1,0 +1,16 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:18
+    steps:
+      - checkout # Checkout the code from your repository
+      - run:
+          name: Install Dependencies
+          command: |
+            npm install
+      - run:
+          name: Build and Test
+          command: |
+            npm run build
+            npm test
